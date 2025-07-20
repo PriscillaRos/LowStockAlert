@@ -1,0 +1,28 @@
+{
+  "name": "priscilla/low-stock-alert",
+  "description": "A Shopware plugin that alerts when a product's stock is below 15 units",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "LowStockAlert\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "LowStockAlert\\LowStockAlert",
+    "label": {
+      "en-GB": "Low Stock Alert",
+      "de-DE": "Niedriger Lagerbestand Alarm"
+    }
+  },
+  "require": {
+    "shopware/core": "*",
+    "doctrine/dbal": "*",
+    "psr/log": "*"
+  },
+  "config": {
+    "allow-plugins": {
+      "symfony/runtime": true
+    }
+  }
+}
