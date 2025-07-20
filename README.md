@@ -1,32 +1,41 @@
-# Low Stock Alert
-
 A Shopware plugin that alerts when a product's stock is below 15 units.
 
-## Description
+Features
+Checks the stock level of products in the database.
 
-This PHP-based plugin monitors product stock levels and logs alerts when the stock falls below a defined threshold (default: 15 units). It uses Doctrine DBAL for database interactions and PSR logging for alert messages.
+Logs an alert message if stock is below 15.
 
-## Installation
+Requirements
+PHP 8+
 
-1. Clone this repository:
+Shopware Core
 
-   ```bash
-   git clone https://github.com/PriscillaRos/low-stock-alert.git
-   cd low-stock-alert
+Doctrine DBAL
 
-## Usage
+PSR Logger Interface
 
-1. Run the example script to test:
+Installation
+Clone or download this repository.
 
-bash
-php demo.php
-You should see low stock alerts logged to the console.
+Run composer install to install dependencies.
 
-You can create this table by running the following SQL:
+Make sure your database has the required product table (see below).
 
-```sql
+Run the plugin or include it in your Shopware environment.
+
+Database Setup
+You can create the product table by running the following SQL:
+
+sql
 CREATE TABLE product (
     id INT PRIMARY KEY AUTO_INCREMENT,
     product_number VARCHAR(100) NOT NULL UNIQUE,
     stock INT NOT NULL
 );
+Usage
+Call the checkLowStock() method of the StockAlertService class to log alerts for products with low stock.
+
+Example:
+
+php
+$stockAlertService->checkLowStock();
