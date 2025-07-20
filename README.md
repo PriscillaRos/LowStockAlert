@@ -21,6 +21,13 @@ A Shopware plugin that alerts when a product's stock is below 15 units.
 3. Make sure your database has the required `product` table (see below).
 4. Run the plugin or include it in your Shopware environment.
 
+Usage
+Call the checkLowStock() method of the StockAlertService class to log alerts for products with low stock.
+ 
+
+    $stockAlertService->checkLowStock();
+
+
 ## Database Setup
 
 You can create the `product` table by running the following SQL:
