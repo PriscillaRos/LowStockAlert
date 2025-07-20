@@ -19,7 +19,5 @@ This PHP-based plugin monitors product stock levels and logs alerts when the sto
 1. Run the example script to test:
 
 bash
-Copia
-Modifica
 php demo.php
 You should see low stock alerts logged to the console.
