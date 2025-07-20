@@ -13,6 +13,7 @@ A Shopware plugin that alerts when a product's stock is below 15 units.
 - Shopware Core
 - Doctrine DBAL
 - PSR Logger Interface
+- A MySQL (or compatible) database
 
 ## Installation
 
