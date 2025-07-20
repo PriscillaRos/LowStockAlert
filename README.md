@@ -1,27 +1,21 @@
 A Shopware plugin that alerts when a product's stock is below 15 units.
 
 Features
-Checks the stock level of products in the database.
 
-Logs an alert message if stock is below 15.
+    Checks the stock level of products in the database.
+    Logs an alert message if stock is below 15.
 
 Requirements
-PHP 8+
-
-Shopware Core
-
-Doctrine DBAL
-
-PSR Logger Interface
+    PHP 8+
+    Shopware Core
+    Doctrine DBAL
+    PSR Logger Interface
 
 Installation
-Clone or download this repository.
-
-Run composer install to install dependencies.
-
-Make sure your database has the required product table (see below).
-
-Run the plugin or include it in your Shopware environment.
+    Clone or download this repository.
+    Run composer install to install dependencies.
+    Make sure your database has the required product table (see below).
+    Run the plugin or include it in your Shopware environment.
 
 Database Setup
 You can create the product table by running the following SQL:
