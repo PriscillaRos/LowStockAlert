@@ -21,3 +21,12 @@ This PHP-based plugin monitors product stock levels and logs alerts when the sto
 bash
 php demo.php
 You should see low stock alerts logged to the console.
+
+You can create this table by running the following SQL:
+
+```sql
+CREATE TABLE product (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    product_number VARCHAR(100) NOT NULL UNIQUE,
+    stock INT NOT NULL
+);
